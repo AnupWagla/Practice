@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="navbar">
+        <a href="index.html" class="Logo">
+            <img src="image/Banner.png" alt="Logo"/>
+        </a>
+    </div>
+
+    <form>
+        <label for="name">Name:</label><br>
+        <input type="text" id="name" name="name" placeholder="Enter Your Name" required><br><br>
+
+        <label for="Email">Email:</label><br>
+        <input type="text" id="Email" name="Email" placeholder="Enter your email" required><br><br>
+
+        <label for="Password">Password:</label><br>
+        <input type="password" id="Password" name="Password" placeholder="Enter your password" required><br><br>
+
+        <label for="Gender">Gender:</label><br>
+        <select name="Gender" id="Gender" required>
+            <option value="Male">Male</option>
+            <option value="Female">Female</option>
+            <option value="Other">Other</option>
+        </select><br><br>
+    </form>
+        </a>
+    </div>
+    <form id="dobForm">
+        <label for="dob">Date of Birth:</label><br>
+        <input type="date" id="dob" name="dob" required><br><br>
+
+        <button type="submit">Add to Register</button>
+    </form>
+
+    <div class="register-list">
+        <h2>Registered Entries</h2>
+        <ul id="registerList"></ul>
+    </div>
+</div>
+    <script>
+        function refreshPage() {
+            setTimeout(function() {
+                location.reload();
+            }, 500);
+        }
+    </script>
+</body>
+</html>
